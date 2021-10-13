@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/purple_700"
+        android:id="@+id/llTime">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="Time: "
+            android:textSize="25sp"
+            android:id="@+id/tvTime"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/llTime"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/llCeleb">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="40sp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:background="#554F4F"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:id="@+id/tvName"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Taboo"
+            android:textColor="#E91E63"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:id="@+id/tvT1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Taboo"
+            android:textColor="#81554F4F"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:id="@+id/tvT2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Taboo"
+            android:textColor="#E91E63"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:id="@+id/tvT3"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@id/llTime"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/llStart">
+
+        <TextView
+            android:id="@+id/tvHead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Heads Up!"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:layout_marginBottom="15dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:padding="12dp"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:id="@+id/btnStart"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
